@@ -1,5 +1,5 @@
 #include <Keyboard.h>
-
+// C миллисами
 int buttonPin = 2;
 int count;        // Счетчик
 int incr = 1000;  // Увеличение времени за оборот
