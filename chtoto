@@ -1,9 +1,9 @@
 #include <Keyboard.h>
 
 int buttonPin = 2;
-int count; // Счетчик
-int incr = 1000;
-int decr = 200;
+int count;        // Счетчик
+int incr = 1000;  // Увеличение времени за оборот
+int decr = 200;   // Дискретность
 
 void setup() {
   count = 0;
