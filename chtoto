@@ -1,18 +1,22 @@
 #include <Keyboard.h>
+
 int buttonPin = 2;
 int count = 0;
 unsigned int temp = 0;
+
 void setup() {
-pinMode(buttonPin, INPUT_PULLUP);
-Serial.begin(38400);
+  pinMode(buttonPin, INPUT_PULLUP);
+  Serial.begin(38400);
 }
+
 void loop() {
-int buttonValue = digitalRead(buttonPin);
-if (buttonValue == LOW) {
-Keyboard.press('w');
-delay(2000);
-Keyboard.releaseAll();
-} else {
-Keyboard.releaseAll();
-}
+  int buttonValue = digitalRead(buttonPin);
+  if (buttonValue == LOW) {
+    Keyboard.press('w');
+    delay(2000);
+    Keyboard.releaseAll();
+  } 
+  else {
+    Keyboard.releaseAll();
+  }
 }
